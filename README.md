@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -96,4 +95,3 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
     - `df -h`
 - Add to ~/.zshrc or ~/.bash_profile
     -`alias checkspace="df -h | head -2 && echo 'Top cache folders:' && du -sh ~/Library/Caches/* 2>/dev/null | sort -hr | head -5 && echo 'npm cache:' && npm cache verify"`
->>>>>>> 4aade11 (chore: node install, eslint setup, and readme notes)
