@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -35,7 +34,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
 # portfolio
 
 # Node + ESLint Set Up:
@@ -96,4 +94,50 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
     - `df -h`
 - Add to ~/.zshrc or ~/.bash_profile
     -`alias checkspace="df -h | head -2 && echo 'Top cache folders:' && du -sh ~/Library/Caches/* 2>/dev/null | sort -hr | head -5 && echo 'npm cache:' && npm cache verify"`
->>>>>>> 4aade11 (chore: node install, eslint setup, and readme notes)
+
+
+# Vercel
+
+# Deploy current directory instantly (great for testing)
+vercel
+
+# Deploy to preview (doesn't affect production)
+vercel --prod=false
+
+# Check deployment status
+vercel ls
+
+# View logs for debugging
+vercel logs
+
+# Run your app with Vercel's environment locally
+vercel dev
+
+# Pull environment variables from Vercel to local
+vercel env pull .env.local
+
+## Workflow
+# Make changes
+# Test locally: npm run dev
+# Quick test on Vercel: vercel
+# If good, push to GitHub for production
+
+# Project Structure
+
+src/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── ui/           # Reusable UI components
+│   ├── sections/     # Page sections (Hero, About, etc.)
+│   └── layout/       # Layout components (Header, Footer)
+├── lib/
+│   └── utils.ts      # Utility functions
+├── types/
+│   └── index.ts      # TypeScript types
+├── constants/
+│   └── index.ts      # App constants
+├── styles/           # Additional CSS files
+└── hooks/            # Custom React hooks
