@@ -74,6 +74,7 @@ export default function DesignSystemPage() {
               
               <div>
                 <Muted>Code</Muted>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 <div><Code>const greeting = "Hello World";</Code></div>
               </div>
             </CardContent>
