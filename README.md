@@ -150,3 +150,6 @@ src/
 
 TODO: globally set font
 TODO: control colors by adding layout.tsx to directories
+
+## Love these Bento Grids
+https://tailwindcss.com/plus/ui-blocks/marketing/sections/bento-grids
