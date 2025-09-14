@@ -13,57 +13,74 @@ export default function HomePage() {
           A designer with a developer's eye
         </p>
         <div className="mt-5 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2 ">
-          <div className="relative lg:row-span-2 hover:bg-lime-200">
+          <div className="relative lg:row-span-2 hover:bg-navActive">
             <div className="absolute inset-px" />
             <div className="relative flex h-full flex-col overflow-hidden">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
                 <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Techinical work for small businesses
+                  Dr. Dave Tuck
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Flyers, digital assets, and web pages for a small business.
+                  Flyers, class materials, and web pages for a small business client.
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
                 <img
                   alt=""
                   src="mm_flyer.png"
-                  className="w-full max-lg:max-w-xs object-scale-down"
-                />
-              </div>
-            </div>
-            <div className="pointer-events-none absolute inset-px shadow-sm outline outline-black/5 lg:rounded-l-4xl" />
-          </div>
-          <div className="relative lg:row-span-2 hover:bg-yellow-200">
-            <div className="absolute inset-px" />
-            <div className="relative flex h-full flex-col overflow-hidden">
-              <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Attention to detail
-                </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  Branding for a small education consulting business.
-                </p>
-              </div>
-              <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
-                <img
-                  alt=""
-                  src="pathfinder.png"
                   className="w-full max-lg:max-w-xs"
                 />
               </div>
             </div>
             <div className="pointer-events-none absolute inset-px shadow-sm outline outline-black/5 lg:rounded-l-4xl" />
           </div>
-          <div className="relative lg:row-span-2 hover:bg-slate-200">
+          <div className="relative max-lg:row-start-1 hover:bg-navActive">
+            <div className="absolute inset-px max-lg:rounded-t-4xl" />
+            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+              <div className="px-8 pt-8 sm:px-10 sm:pt-10">
+                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Attention to Detail</p>
+                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                  Branding for a small education consulting business.
+                </p>
+              </div>
+              <div className="flex flex-1 items-center mt-2 justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
+                <img
+                  alt="Pathfinder logo"
+                  src="pathfinder.png"
+                  className="w-full max-lg:max-w-xs object-scale-down"
+                />
+              </div>
+            </div>
+            <div className="pointer-events-none absolute inset-px shadow-sm outline outline-black/5 max-lg:rounded-t-4xl" />
+          </div>
+          <div className="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2 hover:bg-navActive">
+            <div className="absolute inset-px" />
+            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
+              <div className="px-8 pt-8 sm:px-10 sm:pt-10">
+                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">A Focus on Accessibility</p>
+                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                  Check out this accessibility tool.
+                </p>
+              </div>
+              <div className="@container flex flex-1 items-center max-lg:py-5 lg:pb-2">
+                <img
+                  alt=""
+                  src=""
+                  className="h-[min(152px,40cqw)]"
+                />
+              </div>
+            </div>
+            <div className="pointer-events-none absolute inset-px shadow-sm outline outline-black/5" />
+          </div>
+          <div className="relative lg:row-span-2 hover:bg-navActive">
             <div className="absolute inset-px max-lg:rounded-b-4xl lg:rounded-r-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
              <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
                 <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Design and developed from scratch
+                  ZB Trucking
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
-                  A slick ecommerce site for a family-owned transportation company.
+                  A slick ecommerce site for a trucking company. Designed and coded from scratch.
                 </p>
               </div>
              {/* Image container */}
