@@ -12,6 +12,7 @@ const config = {
       },
       colors: {
         background: "var(--background)",
+        greenbg: "#C8EC84",
         foreground: "var(--foreground)",
         navActive: "#94CAE3",
         navHover: "#FFF460",

@@ -141,3 +141,12 @@ src/
 │   └── index.ts      # App constants
 ├── styles/           # Additional CSS files
 └── hooks/            # Custom React hooks
+
+# Learnings
+
+- In NextJS projects all photos have to go in the /public directory.
+- tailwind.config.js is a good place to import colors and fonts.
+- Explain what this does: ` <Navbar style={{ backgroundColor: "bg-white" }}/>`
+
+TODO: globally set font
+TODO: control colors by adding layout.tsx to directories

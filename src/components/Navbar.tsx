@@ -1,11 +1,13 @@
 "use client";
 
-const Navbar = () => {
+const Navbar = ({ style }: { style?: React.CSSProperties }) => {
   return (
     <header className="flex justify-between items-center px-6 py-4">
         <div className="flex flex-col">
+            <a href="/">
             <h1 className="text-2xl font-semibold">selam berhea</h1>
             <p className="text-lg">selam.work@proton.me</p>
+            </a>
             </div>
         <nav className="flex justify-evenly gap-x-12">
             <a 
