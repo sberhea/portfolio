@@ -13,8 +13,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${instrumentSans.className} bg-greenbg`}>
-        {children}
+      <body className={`${instrumentSans.className} h-screen flex flex-col overflow-hidden`}>
+        <div className="flex-1">
+            {children}
+        </div>
       </body>
     </html>
   );

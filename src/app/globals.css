@@ -4,7 +4,6 @@
 
 /* TODO: Make color swapper */
 :root {
-  --background: #ffffff;
   --foreground: #00227A;
 }
 
@@ -18,8 +17,10 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 @layer utilities {
