@@ -1,13 +1,14 @@
 "use client";
+import Link from 'next/link'
 
-const Navbar = ({ style }: { style?: React.CSSProperties }) => {
+const Navbar = () => {
   return (
     <header className="flex justify-between items-center px-6 py-4">
         <div className="flex flex-col">
-            <a href="/">
+            <Link href="/">
             <h1 className="text-2xl font-semibold">selam berhea</h1>
             <p className="text-lg">selam.work@proton.me</p>
-            </a>
+            </Link>
             </div>
         <nav className="flex justify-evenly gap-x-12">
             <a 
