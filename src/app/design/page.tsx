@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 
-export default function HomePage() {
+export default function DesignPage() {
   return (
     <main className="min-h-screen bg-white">
        {/* Navbar */}
@@ -14,6 +14,7 @@ export default function HomePage() {
         </p>
         <div className="mt-5 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2 ">
           <div className="relative lg:row-span-2 hover:bg-lime-200">
+            <a href="/design/dave-tuck">
             <div className="absolute inset-px" />
             <div className="relative flex h-full flex-col overflow-hidden">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
@@ -33,6 +34,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="pointer-events-none absolute inset-px shadow-sm outline outline-black/5 lg:rounded-l-4xl" />
+            </a>
           </div>
           <div className="relative lg:row-span-2 hover:bg-yellow-200">
             <div className="absolute inset-px" />
