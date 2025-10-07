@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 
 export default function HomePage() {
   return (
-    <main className="h-screen bg-greenbg overflow-hidden">
+    <main className="min-h-screen overflow-hidden">
        {/* Navbar */}
         <Navbar />
   

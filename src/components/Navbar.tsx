@@ -15,20 +15,26 @@ const Navbar = () => {
                 href="/design" 
                 className="px-3 py-1 text-xl font-medium bg-navActive hover:bg-navHover transition-colors duration-200"
             >
+                Projects
+            </a>
+            {/* <a 
+                href="/design" 
+                className="px-3 py-1 text-xl font-medium bg-navActive hover:bg-navHover transition-colors duration-200"
+            >
                 Design
             </a>
             <a 
                 href="/writing" 
                 className="px-3 py-1 text-xl font-medium  bg-navActive hover:bg-navHover transition-colors duration-200"
             >
-                Writing
+                Dev
             </a>
             <a 
                 href="/dev" 
                 className="px-3 py-1 text-xl font-medium bg-navActive hover:bg-navHover transition-colors duration-200"
             >
-                Dev
-            </a>
+                Writing
+            </a> */}
             </nav>
     </header>
   );

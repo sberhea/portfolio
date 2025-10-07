@@ -11,10 +11,12 @@ const config = {
         'sans': ['var(--font-instrument-sans)', 'system-ui', 'sans-serif'],
       },
       colors: {
-        greenbg: "#C8EC84",
+        greenbg: "#BBE181",
         foreground: "var(--foreground)",
         navActive: "#94CAE3",
         navHover: "#FFF460",
+        redText: "#8C1300",
+        zbcolor: '#3CA65F',
       },
     },
   },
