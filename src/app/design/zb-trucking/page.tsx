@@ -73,7 +73,7 @@ export default function ZBTruckingPage() {
                 </div>
               </div>
               <div className="text-center mt-4 text-sm text-gray-600">
-                "Quick, friendly, and reliable"
+                &quot;Quick, friendly, and reliable&quot;
               </div>
             </div>
 
@@ -105,9 +105,9 @@ export default function ZBTruckingPage() {
             <div className="bg-white p-6 relative z-10">
               <h3 className="text-lg font-semibold mb-4">Client Testimonial</h3>
               <div className="text-center">
-                <div className="text-4xl text-blue-200 mb-2">"</div>
+                <div className="text-4xl text-blue-200 mb-2"></div>
                 <div className="italic text-gray-700 mb-4">
-                  "The new website perfectly captures our company values and has helped us attract new clients."
+                  &quot;The new website perfectly captures our company values and has helped us attract new clients.&quot;
                 </div>
                 <div className="text-sm font-medium text-gray-600">— Meseret, Founder, ZB Trucking</div>
               </div>
