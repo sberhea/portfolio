@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 
-export default function HomePage() {
+export default function DesignPage() {
   return (
     <main className="min-h-screen bg-white">
        {/* Navbar */}
@@ -8,12 +8,16 @@ export default function HomePage() {
 
       <div className="py-24 sm:py-12">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-        <h2 className="text-center text-base/7 font-semibold">Design Projects</h2>
+        <h2 className="text-center text-base/7 font-semibold">Projects</h2>
         <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
-          A designer with a developer{"'"}s eye
+          A designer with a developer{"'"}s eye 
         </p>
+        {/* <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
+          A developer with a designer{"'"}s eye
+        </p> */}
         <div className="mt-5 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2 ">
           <div className="relative lg:row-span-2 hover:bg-lime-200">
+            <a href="/design/dave-tuck">
             <div className="absolute inset-px" />
             <div className="relative flex h-full flex-col overflow-hidden">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
@@ -33,8 +37,10 @@ export default function HomePage() {
               </div>
             </div>
             <div className="pointer-events-none absolute inset-px shadow-sm outline outline-black/5 lg:rounded-l-4xl" />
+            </a>
           </div>
           <div className="relative lg:row-span-2 hover:bg-yellow-200">
+            <a href="/design/pathfinder">
             <div className="absolute inset-px" />
             <div className="relative flex h-full flex-col overflow-hidden">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
@@ -54,8 +60,10 @@ export default function HomePage() {
               </div>
             </div>
             <div className="pointer-events-none absolute inset-px shadow-sm outline outline-black/5 lg:rounded-l-4xl" />
+            </a>          
           </div>
           <div className="relative lg:row-span-2 hover:bg-slate-200">
+            <a href="/design/zb-trucking">
             <div className="absolute inset-px max-lg:rounded-b-4xl lg:rounded-r-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
              <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
@@ -81,6 +89,7 @@ export default function HomePage() {
           </div>
             </div>
             <div className="pointer-events-none absolute inset-px shadow-sm outline outline-black/5 max-lg:rounded-b-4xl lg:rounded-r-4xl" />
+            </a>
           </div>
         </div>
       </div>

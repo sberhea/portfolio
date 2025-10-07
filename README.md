@@ -150,3 +150,17 @@ src/
 
 TODO: globally set font
 TODO: control colors by adding layout.tsx to directories
+
+## Love these Bento Grids
+https://tailwindcss.com/plus/ui-blocks/marketing/sections/bento-grids
+
+`npm install react-pdf@7 pdfjs-dist@3.11.174`
+
+What is the purpose of a wrapper?
+I like swiper/react
+
+Swiper is actually really cool. https://swiperjs.com/demos#navigation
+https://swiperjs.com/demos#pagination-fraction
+
+
+What is the difference between Turbopack and Webpack?

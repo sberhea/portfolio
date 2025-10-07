@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${instrumentSans.className} h-screen flex flex-col overflow-hidden`}>
+      <body className={`${instrumentSans.className} min-h-screen flex flex-col`}>
         <div className="flex-1">
             {children}
         </div>
