@@ -47,7 +47,7 @@ export default function ZBTruckingPage() {
   <div className="grid grid-cols-1 lg:grid-cols-3 mx-auto mt-6 px-2 gap-4 min-h-[600px]">
   {/* <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-red-500 transform -translate-x-1/2 z-0"></div> */}
 
-  <div className="col-span-1 p-4 lg:p-8 flex flex-col bg-lime-50 justify-evenly relative">
+  <div className="col-span-1 p-4 lg:p-8 flex flex-col gap-6 bg-lime-50 justify-evenly relative">
    {/* Vertical dotted line connector */}
     <div className="absolute left-1/2 top-0 bottom-0 w-.5 border-l-2 border-dotted border-lime-400 transform -translate-x-1/2 z-0"></div>
 
