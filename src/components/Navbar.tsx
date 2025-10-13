@@ -13,7 +13,7 @@ const Navbar = () => {
         <nav className="flex justify-evenly gap-x-12">
             <a 
                 href="/design" 
-                className="px-3 py-1 text-xl font-medium bg-navActive hover:bg-navHover transition-colors duration-200"
+                className="px-3 py-1 text-xl font-medium hover:bg-lime-300 transition-colors duration-200"
             >
                 Projects
             </a>
