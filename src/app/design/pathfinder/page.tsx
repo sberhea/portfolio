@@ -22,7 +22,6 @@ export default function PresentationPage() {
     <main className="min-h-screen pb-8">
       <Navbar />
       <div className="flex flex-col">
-        <h2 className="text-center mt-4 md:mt-2 text-sm md:text-base font-semibold px-4">Client: Njeri Allen</h2>
         <p className="mx-auto mt-2 max-w-lg px-4 text-center text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-balance text-gray-950">
           Pathfinder
         </p>
