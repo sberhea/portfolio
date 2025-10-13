@@ -49,7 +49,7 @@ export default function ZBTruckingPage() {
 
   <div className="col-span-1 p-4 lg:p-8 flex flex-col bg-lime-50 justify-evenly relative">
    {/* Vertical dotted line connector */}
-    <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-.5 border-l-2 border-dotted border-lime-400 transform -translate-x-1/2 z-0"></div>
+    <div className="absolute left-1/2 top-0 bottom-0 w-.5 border-l-2 border-dotted border-lime-400 transform -translate-x-1/2 z-0"></div>
 
     {/* Color Palette Display */}
     <div className="bg-white p-6 relative z-10">
