@@ -9,7 +9,7 @@ export default function DesignPage() {
       <div className="py-8 md:py-12">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         {/* <h2 className="text-center text-base/7 font-semibold">Projects</h2> */}
-        <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
+        <p className="mx-auto mt-2 max-w-lg text-center text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
           A developer with a <span className="decoration-lime-300 underline">designer{"'"}s</span> eye 
         </p>
         {/* <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">

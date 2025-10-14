@@ -27,7 +27,7 @@ export default function DaveTuckPage() {
     <main>
       <Navbar />
       <div className="py-8 md:py-12">
-      <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
+      <p className="mx-auto mt-2 max-w-lg text-center text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
         A New Beginning Coaching & Retreats
       </p>
       <div className="p-4 md:p-6 max-w-7xl mx-auto mt-4">
