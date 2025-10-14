@@ -6,16 +6,16 @@ const Navbar = () => {
     <header className="flex justify-between items-center px-6 py-4">
         <div className="flex flex-col">
             <Link href="/">
-            <h1 className="text-2xl font-semibold">selam berhea</h1>
-            <p className="text-lg">selam.work@proton.me</p>
+            <h1 className="text-2xl font-semibold text-blueText">selam berhea</h1>
             </Link>
+            <p className="text-lg">selam.work@proton.me</p>
             </div>
         <nav className="flex justify-evenly gap-x-12">
             <a 
                 href="/design" 
-                className="px-3 py-1 text-xl font-medium bg-navActive hover:bg-navHover transition-colors duration-200"
+                className="px-3 py-1 text-xl font-medium bg-navActive hover:bg-lime-300 transition-colors duration-200"
             >
-                Projects
+                <span className="text-blueText">Projects</span>
             </a>
             {/* <a 
                 href="/design" 

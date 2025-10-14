@@ -10,7 +10,7 @@ export default function DesignPage() {
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <h2 className="text-center text-base/7 font-semibold">Projects</h2>
         <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
-          A designer with a developer{"'"}s eye 
+          A developer with a <span className="decoration-lime-300 underline">designer{"'"}s</span> eye 
         </p>
         {/* <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
           A developer with a designer{"'"}s eye
@@ -21,10 +21,10 @@ export default function DesignPage() {
             <div className="absolute inset-px" />
             <div className="relative flex h-full flex-col overflow-hidden">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Techinical work for small businesses
+                <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center">
+                  Consulting for small businesses
                 </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                <p className="mt-2 max-w-lg text-md/6 text-gray-600 max-lg:text-center">
                   Flyers, digital assets, and web pages for a small business.
                 </p>
               </div>
@@ -39,15 +39,15 @@ export default function DesignPage() {
             <div className="pointer-events-none absolute inset-px shadow-sm outline outline-black/5 lg:rounded-l-4xl" />
             </a>
           </div>
-          <div className="relative lg:row-span-2 hover:bg-yellow-200">
+          <div className="relative lg:row-span-2 hover:bg-lime-200">
             <a href="/design/pathfinder">
             <div className="absolute inset-px" />
             <div className="relative flex h-full flex-col overflow-hidden">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+                <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center">
                   Attention to detail
                 </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                <p className="mt-2 max-w-lg text-md/6 text-gray-600 max-lg:text-center">
                   Branding for a small education consulting business.
                 </p>
               </div>
@@ -62,15 +62,15 @@ export default function DesignPage() {
             <div className="pointer-events-none absolute inset-px shadow-sm outline outline-black/5 lg:rounded-l-4xl" />
             </a>          
           </div>
-          <div className="relative lg:row-span-2 hover:bg-slate-200">
+          <div className="relative lg:row-span-2 hover:bg-lime-200">
             <a href="/design/zb-trucking">
             <div className="absolute inset-px max-lg:rounded-b-4xl lg:rounded-r-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
              <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">
+                <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center">
                   Design and developed from scratch
                 </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                <p className="mt-2 max-w-lg text-md/6 text-gray-600 max-lg:text-center">
                   A slick ecommerce site for a family-owned transportation company.
                 </p>
               </div>
