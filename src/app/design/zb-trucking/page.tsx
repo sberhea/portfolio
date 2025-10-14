@@ -7,6 +7,7 @@ export default function ZBTruckingPage() {
   return (
     <main>
         <Navbar />
+        <div className="py-8 md:py-12">
         <div>
         <p className="mx-auto mt-2 max-w-lg px-4 text-center text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-balance text-gray-950">
           ZB Trucking
@@ -21,7 +22,7 @@ export default function ZBTruckingPage() {
           </div>
           <div className="bg-lime-50/50 pt-8">
             <Image src="/zb_logo.png" alt="ZB logo" width={400} height={400} quality={100} unoptimized className="rounded-xl mx-auto items-center" />
-            <div className="mx-auto px-8 mt-10 text-center tracking-normal text-balance font-stretch-expanded text-lg/10 space-y-4">
+            <div className="mx-auto px-8 mt-4 text-center tracking-normal text-balance font-stretch-expanded text-lg/10 space-y-4">
               <p>
                 Zack and Ben Trucking is a small transportation company that wanted a clean and professional website.
               </p>
@@ -113,8 +114,8 @@ export default function ZBTruckingPage() {
     </div>
     
     <div className="bg-white p-6 relative z-10">
-      <p className="text-center tracking-wide text-balance font-stretch-expanded text-lg/10 mt-auto">
-        Check out the Figma project <a href="https://www.figma.com/design/E7mkWWgoga3dN4P3jwuI8p/ZB-Trucking?node-id=1097-1328&t=8GKSEUIgUqdJNFy8-1" className="underline font-bold"> here </a>.
+      <p className="text-center tracking-normal text-balance text-lg/10 mt-auto">
+        Check out the Figma project <a href="https://www.figma.com/design/E7mkWWgoga3dN4P3jwuI8p/ZB-Trucking?node-id=1097-1328&t=8GKSEUIgUqdJNFy8-1" className="underline font-bold"> here</a>.
       </p>
     </div>
   </div>
@@ -132,6 +133,7 @@ export default function ZBTruckingPage() {
     />
   </div>
 </div>    
+</div>
     </main>
   )
 }
