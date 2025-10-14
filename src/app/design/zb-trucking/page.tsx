@@ -22,7 +22,7 @@ export default function ZBTruckingPage() {
           </div>
           <div className="bg-lime-50/50 pt-8">
             <Image src="/zb_logo.png" alt="ZB logo" width={400} height={400} quality={100} unoptimized className="rounded-xl mx-auto items-center" />
-            <div className="mx-auto px-8 mt-10 text-center tracking-normal text-balance font-stretch-expanded text-lg/10 space-y-4">
+            <div className="mx-auto px-8 mt-4 text-center tracking-normal text-balance font-stretch-expanded text-lg/10 space-y-4">
               <p>
                 Zack and Ben Trucking is a small transportation company that wanted a clean and professional website.
               </p>
