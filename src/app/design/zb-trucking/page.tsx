@@ -88,7 +88,7 @@ export default function ZBTruckingPage() {
           { step: "Develop", desc: "Website implementation" }
         ].map((item, i) => (
           <div key={i} className="relative flex items-center mb-4">
-            <div className="w-8 h-8 bg-navHover rounded-full flex items-center justify-center text-black text-sm font-bold z-10">
+            <div className="w-8 h-8 bg-navActive rounded-full flex items-center justify-center text-black text-sm font-bold z-10">
               {i + 1}
             </div>
             <div className="ml-4">
