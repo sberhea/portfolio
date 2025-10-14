@@ -15,9 +15,13 @@
   }
 } */
 
+h1, h2, h3 {
+  font-family: var(--font-playfair);
+}
+
 body {
   color: var(--foreground);
-  font-family: Arial, Helvetica, serif;
+  font-family: var(--font-lora);
   height: 100%;
   margin: 0;
   padding: 0;

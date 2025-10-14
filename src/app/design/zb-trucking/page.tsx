@@ -19,7 +19,7 @@ export default function ZBTruckingPage() {
           <div className="col-span-1 flex">
               <Image src="/mockups/mockup_2.png" alt="About Us mockup" width={500} height={500} quality={100} unoptimized className="rounded-xl shadow-lg" />
           </div>
-          <div className="bg-lime-50 pt-8">
+          <div className="bg-lime-50/50 pt-8">
             <Image src="/zb_logo.png" alt="ZB logo" width={400} height={400} quality={100} unoptimized className="rounded-xl mx-auto items-center" />
             <div className="mx-auto px-8 mt-10 text-center tracking-normal text-balance font-stretch-expanded text-lg/10 space-y-4">
               <p>
@@ -46,7 +46,7 @@ export default function ZBTruckingPage() {
   <div className="grid grid-cols-1 lg:grid-cols-3 mx-auto mt-6 px-2 gap-4 min-h-[600px]">
   {/* <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-red-500 transform -translate-x-1/2 z-0"></div> */}
 
-  <div className="col-span-1 p-4 lg:p-8 flex flex-col gap-6 bg-lime-50 justify-evenly relative">
+  <div className="col-span-1 p-4 lg:p-8 flex flex-col gap-6 bg-lime-50/50 justify-evenly relative">
    {/* Vertical dotted line connector */}
     <div className="absolute left-1/2 top-0 bottom-0 w-.5 border-l-2 border-dotted border-lime-400 transform -translate-x-1/2 z-0"></div>
 
@@ -106,7 +106,7 @@ export default function ZBTruckingPage() {
       <div className="text-center">
         <div className="text-4xl text-blue-200 mb-2"></div>
         <div className="italic text-gray-700 mb-4">
-          &quot;The new website perfectly captures our company values and has helped us attract new clients.&quot;
+          &quot;I am very happy with the design and overall layout.&quot;
         </div>
         <div className="text-sm font-medium text-gray-600">— Meseret, Founder, ZB Trucking</div>
       </div>

@@ -1,9 +1,19 @@
 import './globals.css';
-import { Instrument_Sans } from 'next/font/google'
+import { Inter, Playfair_Display, Lora } from 'next/font/google'
 
-const instrumentSans = Instrument_Sans({
+const inter = Inter({ 
   subsets: ['latin'],
-  display: 'swap',
+  variable: '--font-inter',
+})
+
+const lora = Lora({
+  subsets: ['latin'],
+  variable: '--font-lora',
+})
+
+const playfair = Playfair_Display({ 
+  subsets: ['latin'],
+  variable: '--font-playfair',
 })
 
 export default function RootLayout({
@@ -12,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${instrumentSans.className} min-h-screen flex flex-col`}>
+    <html lang="en" className={`${lora.variable} ${playfair.variable}`}>
+      <body className="min-h-screen flex flex-col {lora.className}">
         <div className="flex-1">
             {children}
         </div>

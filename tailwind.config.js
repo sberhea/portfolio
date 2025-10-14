@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 const config = {
   content: [
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',        // Your app directory
@@ -8,7 +9,6 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['var(--font-instrument-sans)', 'system-ui', 'sans-serif'],
       },
       colors: {
         greenbg: "#BBE181",
@@ -16,6 +16,8 @@ const config = {
         navActive: "#94CAE3",
         navHover: "#FFF460",
         redText: "#8C1300",
+        blueText: "#00227A",
+        orange: "#EAA835",
         zbcolor: '#3CA65F',
       },
     },
