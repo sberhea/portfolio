@@ -5,7 +5,7 @@ const Hero = ({}) => {
     <div className="mx-auto px-8 mt-10 tracking-normal font-stretch-expanded space-y-4 text-3xl leading-relaxed text-black italic">
 
       <p className="">
-        Selam is a <span className="hover:bg-lime-300 pr-1"> designer</span>, <span className="hover:bg-lime-300 pr-1">engineer</span>, and <span className="hover:bg-lime-300 pr-1">writer</span>. 
+        Selam is a <span className="hover:bg-lime-300 pr-0.5"> designer</span>, <span className="hover:bg-lime-300 pr-0.5">engineer</span>, and <span className="hover:bg-lime-300 pr-0.5">writer</span>. 
       </p>
       <p>  
       She has four years of engineering experience on an observability team at a Fortune 500 company. 
