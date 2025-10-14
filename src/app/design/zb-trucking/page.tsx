@@ -7,6 +7,7 @@ export default function ZBTruckingPage() {
   return (
     <main>
         <Navbar />
+        <div className="py-24 sm:py-12">
         <div>
         <p className="mx-auto mt-2 max-w-lg px-4 text-center text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-balance text-gray-950">
           ZB Trucking
@@ -132,6 +133,7 @@ export default function ZBTruckingPage() {
     />
   </div>
 </div>    
+</div>
     </main>
   )
 }

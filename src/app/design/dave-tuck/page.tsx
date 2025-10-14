@@ -26,6 +26,7 @@ export default function DaveTuckPage() {
   return (
     <main>
       <Navbar />
+      <div className="py-24 sm:py-12">
       <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
         A New Beginning Coaching & Retreats
       </p>
@@ -133,6 +134,7 @@ export default function DaveTuckPage() {
           </motion.div>
         )}
       </AnimatePresence>
+      </div>
     </main>
   )
 }
