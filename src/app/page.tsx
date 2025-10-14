@@ -9,7 +9,7 @@ export default function HomePage() {
   
 
       {/* Page content */}
-      <div className="max-w-4xl mx-auto py-8 md:py-12">
+      <div className="max-w-4xl py-8 md:py-12">
         <Hero/>
       </div>
     </main>
