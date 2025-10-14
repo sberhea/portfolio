@@ -30,7 +30,7 @@ export default function DaveTuckPage() {
       <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
         A New Beginning Coaching & Retreats
       </p>
-      <div className="p-4 md:p-6 max-w-7xl mx-auto">
+      <div className="p-4 md:p-6 max-w-7xl mx-auto mt-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Large card - spans 2 rows on desktop */}
           <motion.div
