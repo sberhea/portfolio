@@ -43,7 +43,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Selam Berhea - Designer & Engineer',
     description: 'Designer, engineer, and writer with expertise in UX/UI design.',
-    images: ['https://selam.work/og-image.jpg'],
+    images: ['https://selam.work/og-image.png'],
   },
 }
 
