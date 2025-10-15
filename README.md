@@ -1,166 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
+
+A portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+
+## Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
+- **Additional Libraries:** 
+  - Swiper (carousel/slider)
+  - React PDF (PDF viewing)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- [Node.js](https://nodejs.org/en/download) installed on your machine
+- Verify installation:
+  ```bash
+  node --version
+  npm --version
+  npx --version
+  ```
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Available Scripts
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run dev          # Start development server
+npm run build        # Build for production
+npm start            # Start production server
+npm run lint         # Run ESLint
+npm run lint:fix     # Fix ESLint errors
+npm run format       # Format code with Prettier
+npm run type-check   # Check TypeScript types
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Development Workflow
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Before commits:**
+   - Run `npm run lint` every few file changes
+   - Run `npm run format` to ensure consistent formatting
+   - Run `npm run type-check` when adding new types
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Testing changes:**
+   - Test locally: `npm run dev`
+   - Quick Vercel preview: `vercel`
+   - Production deployment: Push to GitHub (auto-deploys via Vercel)
 
-## Learn More
+## Vercel Deployment
 
-To learn more about Next.js, take a look at the following resources:
+### Quick Commands
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+vercel                    # Deploy current directory instantly
+vercel --prod=false       # Deploy to preview (non-production)
+vercel ls                 # Check deployment status
+vercel logs               # View deployment logs
+vercel dev                # Run with Vercel environment locally
+vercel env pull .env.local # Pull environment variables from Vercel
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Deployment Workflow
 
-## Deploy on Vercel
+1. Make changes locally
+2. Test with `npm run dev`
+3. Quick test on Vercel with `vercel` command
+4. If satisfied, push to GitHub for production deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Maintenance
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# portfolio
+### Cache Management
 
-# Node + ESLint Set Up:
-- Download [Node.js](https://nodejs.org/en/download)
-- Check:
-    - `node --version`
-    - `npm --version`
-    - `npx --version`
-- Run the create app command 
-    - `npx create-next-app@latest my-portfolio --typescript --tailwind --eslint --app --src-dir --import-alias "@/*"`
-- Check local host by running `npm run dev`
-- Make ESLint more robust
-    - `npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier`
-- Check that lint is working
-    - `npm run lint`
-    - `npm run type-check`
-- Install Prettier
-    - `npm install --save-dev prettier eslint-config-prettier`
-- Create prettier config file
-    - `touch .prettierrc`
-    - Add this to it: ```
-        {
-        "semi": true,
-        "trailingComma": "es5",
-        "singleQuote": true,
-        "tabWidth": 2,
-        "useTabs": false,
-        "printWidth": 80
-        }
-    ```
-- Add formatting script
-    - ```
-    {
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint",
-        "lint:fix": "next lint --fix",
-        "format": "prettier --write .",
-        "type-check": "tsc --noEmit"
-    }
-    }
-    ```
-# Development Tips
-- Run - `npm run lint`every few file changes or before commits.
-- Run `npm run type-check`when adding new types and before builds.
-- Run `npm run format`before every commit.
+```bash
+# Check cache size
+npm cache verify
 
-# Memory Management
-- Check cache size
-    - `npm cache verify`
-- Clear when needed (safe to do)
-    - `npm cache clean --force`
-- Clear Next.js build cache
-    - `rm -rf .next`
-- Check your space
-    - `df -h`
-- Add to ~/.zshrc or ~/.bash_profile
-    -`alias checkspace="df -h | head -2 && echo 'Top cache folders:' && du -sh ~/Library/Caches/* 2>/dev/null | sort -hr | head -5 && echo 'npm cache:' && npm cache verify"`
+# Clear npm cache (safe)
+npm cache clean --force
 
+# Clear Next.js build cache
+rm -rf .next
 
-# Vercel
+# Check disk space
+df -h
+```
 
-# Deploy current directory instantly (great for testing)
-vercel
+### Optional: Add to `~/.zshrc` or `~/.bash_profile`
 
-# Deploy to preview (doesn't affect production)
-vercel --prod=false
+```bash
+alias checkspace="df -h | head -2 && echo 'Top cache folders:' && du -sh ~/Library/Caches/* 2>/dev/null | sort -hr | head -5 && echo 'npm cache:' && npm cache verify"
+```
 
-# Check deployment status
-vercel ls
+## Resources
 
-# View logs for debugging
-vercel logs
-
-# Run your app with Vercel's environment locally
-vercel dev
-
-# Pull environment variables from Vercel to local
-vercel env pull .env.local
-
-## Workflow
-# Make changes
-# Test locally: npm run dev
-# Quick test on Vercel: vercel
-# If good, push to GitHub for production
-
-# Project Structure
-
-src/
-├── app/
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
-├── components/
-│   ├── ui/           # Reusable UI components
-│   ├── sections/     # Page sections (Hero, About, etc.)
-│   └── layout/       # Layout components (Header, Footer)
-├── lib/
-│   └── utils.ts      # Utility functions
-├── types/
-│   └── index.ts      # TypeScript types
-├── constants/
-│   └── index.ts      # App constants
-├── styles/           # Additional CSS files
-└── hooks/            # Custom React hooks
-
-# Learnings
-
-- In NextJS projects all photos have to go in the /public directory.
-- tailwind.config.js is a good place to import colors and fonts.
-- Explain what this does: ` <Navbar style={{ backgroundColor: "bg-white" }}/>`
-
-TODO: globally set font
-TODO: control colors by adding layout.tsx to directories
-
-## Love these Bento Grids
-https://tailwindcss.com/plus/ui-blocks/marketing/sections/bento-grids
-
-`npm install react-pdf@7 pdfjs-dist@3.11.174`
-
-What is the purpose of a wrapper?
-I like swiper/react
-
-Swiper is actually really cool. https://swiperjs.com/demos#navigation
-https://swiperjs.com/demos#pagination-fraction
-
-
-What is the difference between Turbopack and Webpack?
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn) - Interactive tutorial
+- [Tailwind CSS](https://tailwindcss.com/docs)
+- [Swiper Documentation](https://swiperjs.com/react)
+- [Tailwind UI Components](https://tailwindcss.com/plus/ui-blocks/marketing/sections/bento-grids)
