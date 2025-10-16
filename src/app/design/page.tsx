@@ -68,10 +68,10 @@ export default function DesignPage() {
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
              <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
                 <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center">
-                  Design and developed from scratch
+                  Clean designs
                 </p>
                 <p className="mt-2 max-w-lg text-md/6 text-gray-600 max-lg:text-center">
-                  A slick ecommerce site for a family-owned transportation company.
+                  Mockups of a slick ecommerce site for a family-owned transportation company.
                 </p>
               </div>
              {/* Image container */}
