@@ -13,12 +13,6 @@ const Hero = ({}) => {
       <p>
       Her portfolio spans UI design, marketing, video, and brand development for organizations in education, transportation, and wellness.
       </p>
-      <p>
-      Selam aims to apply her design and technical skills toward building <span className="bg-lime-300 pr-0.5">technology that serves people responsibly</span>. 
-      </p>
-      <p>
-      Her current interests include <span className="decoration-fuchsia-400 underline underline-offset-[8px]">internet safety</span>, <span className="decoration-fuchsia-400 underline underline-offset-[8px]">AI ethics</span>, and <span className="decoration-fuchsia-400 underline underline-offset-[8px]">edtech</span>.
-      </p>
       </div>
     </section>
   );
