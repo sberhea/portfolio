@@ -48,7 +48,7 @@ export default function ZBTruckingPage() {
               Many companies in the space leaned into bold, masculine palettes — black and yellow,
               navy, red and white. I wanted something that felt quick, friendly, and reliable. I
               landed on a light, bright combination and wove a trail/road motif throughout the pages
-              to reinforce the brand's identity.
+              to reinforce the {"brand's"} identity.
             </p>
           </div>
 
@@ -87,9 +87,7 @@ export default function ZBTruckingPage() {
       {/* User Personas */}
       <Section title="User Personas">
         <p className="mb-6">
-          Through initial conversations with the client, we identified three core user types for the
-          site. We prioritized the first two since their needs were most pressing and most directly
-          tied to the business's growth.
+          Through initial conversations with the client, we identified three core user types for the site. We prioritized the first two since their needs were most pressing and most directly tied to the {"business's"} growth.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
           {[
@@ -206,7 +204,7 @@ export default function ZBTruckingPage() {
       <Section title="Results & Takeaways">
         <p className="mb-6">
           For this project I wore the hat of brand strategist, researcher, and visual designer. 
-          A few key learnings shaped how I'll approach similar projects in the future.
+          A few key learnings shaped how {"I'll"} approach similar projects in the future.
         </p>
         <ul className="space-y-6">
           {[
@@ -218,12 +216,12 @@ export default function ZBTruckingPage() {
             {
               label: "Brand consistency compounds.",
               desc:
-                "Repeating the road motif and color palette in small, unexpected places (section dividers, button hover states) strengthened the brand story.",
+                "Repeating the road motif and color palette in small, unexpected places (section dividers, button hover states) strengthened.",
             },
             {
               label: "Scope aggressively, launch fast.",
               desc:
-                "For a small business, getting something live quickly is more valuable than a perfect design.",
+                "For a small business, getting something live quickly is more valuable than a perfect design. We shipped the MVP and iterated based on real feedback.",
             },
           ].map((item) => (
             <li key={item.label} className="flex gap-4">
