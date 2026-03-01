@@ -8,24 +8,22 @@ export default function DesignPage() {
 
       <div className="py-8 md:py-12">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-        {/* <h2 className="text-center text-base/7 font-semibold">Projects</h2> */}
-        <p className="mx-auto mt-2 max-w-lg text-center text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
-          A developer with a <span className="decoration-lime-300 underline">designer{"'"}s</span> eye 
-        </p>
-        {/* <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
-          A developer with a designer{"'"}s eye
-        </p> */}
+        <section className="max-w-5xl mx-auto px-6 md:px-12 pt-8">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-950 mb-6 text-center">
+            A developer with a <span className="decoration-lime-300 underline">designer{"'"}s</span> eye 
+          </h2>
+        </section>
         <div className="mt-5 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2 ">
           <div className="relative lg:row-span-2 hover:bg-lime-200">
             <a href="/design/dave-tuck">
             <div className="absolute inset-px" />
             <div className="relative flex h-full flex-col overflow-hidden">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center">
+                <h3 className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center">
                   Consulting for small businesses
-                </p>
+                </h3>
                 <p className="mt-2 max-w-lg text-md/6 text-gray-600 max-lg:text-center">
-                  Flyers, digital assets, and web pages for a small business.
+                  Flyers, digital assets, and web pages for a wellness business.
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
@@ -44,11 +42,11 @@ export default function DesignPage() {
             <div className="absolute inset-px" />
             <div className="relative flex h-full flex-col overflow-hidden">
               <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center">
+                <h3 className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center">
                   Attention to detail
-                </p>
+                </h3>
                 <p className="mt-2 max-w-lg text-md/6 text-gray-600 max-lg:text-center">
-                  Branding for a small education consulting business.
+                  Branding for a college admissions consultant.
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
@@ -67,18 +65,18 @@ export default function DesignPage() {
             <div className="absolute inset-px max-lg:rounded-b-4xl lg:rounded-r-4xl" />
             <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
              <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-                <p className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center">
+                <h3 className="mt-2 text-xl font-medium tracking-tight text-gray-950 max-lg:text-center">
                   Clean designs
-                </p>
+                </h3>
                 <p className="mt-2 max-w-lg text-md/6 text-gray-600 max-lg:text-center">
-                  Mockups of a slick ecommerce site for a family-owned transportation company.
+                  A case study of a slick website for a family-owned transportation company.
                 </p>
               </div>
              {/* Image container */}
           <div className="relative flex-1 overflow-hidden">
             <img
               alt="ZB Trucking landing screenshot"
-              src="/zb_logo.png"
+              src="/zb/zb_logo.png"
               className="h-full w-full object-scale-down"
             />
             {/* 👆 

@@ -1,139 +1,262 @@
 import Navbar from "@/components/Navbar";
-import Image from "next/image"
+import Image from "next/image";
 
-// const circles = Array.from({ length: 10 });
+interface ImageData {
+  id: number;
+  alt: string;
+  src: string;
+  caption?: string;
+}
+
+const designImages: ImageData[] = [
+  { id: 1, alt: "ZB Trucking homepage mockup", src: "/zb/home_page.png", caption: "Homepage" },
+  { id: 2, alt: "ZB Trucking about page", src: "/zb/our_story.png", caption: "About Page" },
+  { id: 3, alt: "ZB Trucking career page", src: "/zb/career_landing.png", caption: "Careers Page" },
+  { id: 4, alt: "ZB Trucking staff page", src: "/zb/staff_page.png", caption: "Staff Page" },
+  { id: 5, alt: "ZB Trucking contact page", src: "/zb/footer.png", caption: "Contact Page" },
+  { id: 6, alt: "ZB Trucking job posting", src: "/zb/job_posting.png", caption: "Job Posting Page" },
+];
 
 export default function ZBTruckingPage() {
   return (
-    <main>
-        <Navbar />
-        <div className="py-8 md:py-12">
-        <div>
-        <p className="mx-auto mt-2 max-w-lg px-4 text-center text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-balance text-gray-950">
+    <main className="bg-white min-h-screen font-sans">
+      <Navbar />
+
+      {/* Hero — full-width image placeholder */}
+      <div className="w-full bg-blue-300 h-[50vh] flex items-center justify-center overflow-hidden">
+        {/* <Image src="/zb/home_page.png" fill alt="ZB Trucking Hero" className="object-cover" /> */}
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-950 mb-12">
           ZB Trucking
+        </h1>      
+      </div>
+
+      {/* Title + Overview / Role grid */}
+      <section className="max-w-5xl mx-auto px-6 md:px-12 pt-16 pb-10">
+
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-10">
+          {/* Overview */}
+          <div>
+            <h2 className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-4">
+              Overview
+            </h2>
+            <p className="text-gray-700 text-base leading-relaxed">
+              Zack and Ben Trucking is a small, family-owned transportation company that needed a
+              clean and professional web presence. I started the project by surveying existing
+              transportation websites and building a mood board around color palette options.
+            </p>
+            <p className="text-gray-700 text-base leading-relaxed mt-4">
+              Many companies in the space leaned into bold, masculine palettes — black and yellow,
+              navy, red and white. I wanted something that felt quick, friendly, and reliable. I
+              landed on a light, bright combination and wove a trail/road motif throughout the pages
+              to reinforce the {"brand's"} identity.
+            </p>
+          </div>
+
+          {/* Divider */}
+          <div className="hidden md:block w-px bg-gray-200 self-stretch" />
+
+          {/* Role */}
+          <div>
+            <h2 className="text-xs font-semibold tracking-[0.2em] uppercase text-gray-400 mb-4">
+              Role
+            </h2>
+            <p className="text-gray-700 text-base leading-relaxed">
+              <strong>UX/UI Designer</strong>
+              <br />
+              Brand Strategy, Visual Design, User Research, Prototyping
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <Divider />
+
+      {/* Problem Statement */}
+      <Section title="Problem Statement">
+        <p>
+          ZB Trucking is a small family-owned transportation company. They needed a website that
+          communicates their service offerings and establishes legitimacy with potential partners.
+          The site needed to serve two very different audiences: owner-operators looking for work
+          and carriers who need reliable transport, while also making a strong first impression on
+          casual browsers.
         </p>
-        </div>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-6 px-4 items-stretch">
-          <div className="col-span-1 flex">
-              <Image src="/mockups/mockup_1.png" alt="Landing Page mockup" width={500} height={500} quality={100} unoptimized className="rounded-xl shadow-lg" />
-          </div>
-          <div className="col-span-1 flex">
-              <Image src="/mockups/mockup_2.png" alt="About Us mockup" width={500} height={500} quality={100} unoptimized className="rounded-xl shadow-lg" />
-          </div>
-          <div className="bg-lime-50/50 pt-8">
-            <Image src="/zb_logo.png" alt="ZB logo" width={400} height={400} quality={100} unoptimized className="rounded-xl mx-auto items-center" />
-            <div className="mx-auto px-8 mt-4 text-center tracking-normal text-balance font-stretch-expanded text-lg/10 space-y-4">
-              <p>
-                Zack and Ben Trucking is a small transportation company that wanted a clean and professional website.
-              </p>
-              <p>
-                I started this project looking at color palettes and surveying existing transportation websites.
-              </p>
-              <p>
-                Many of the companies’ brand colors were bold and masculine (black/yellow, navy blue, red/white/black).
-              </p>
-              <p>
-                I liked this mix of light and bright colors.
-              </p>
-              <p>
-                Quick, friendly, and reliable is what I was trying to communicate.
-              </p>
-              <p>
-                I also incorporated a trail/road motif through the pages.
-              </p>
-            </div>
-          </div>
-          </div>              
-  <div className="grid grid-cols-1 lg:grid-cols-3 mx-auto mt-6 px-2 gap-4 min-h-[600px]">
-  {/* <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-red-500 transform -translate-x-1/2 z-0"></div> */}
+      </Section>
 
-  <div className="col-span-1 p-4 lg:p-8 flex flex-col gap-6 bg-lime-50/50 justify-evenly relative">
-   {/* Vertical dotted line connector */}
-    <div className="absolute left-1/2 top-0 bottom-0 w-.5 border-l-2 border-dotted border-lime-400 transform -translate-x-1/2 z-0"></div>
+      <Divider />
 
-    {/* Color Palette Display */}
-    <div className="bg-white p-6 relative z-10">
-      <h3 className="text-lg font-semibold mb-4">Color Palette</h3>
-      <div className="flex justify-center items-center space-x-4">
-        <div className="text-center">
-          <div className="w-12 h-12 bg-[#5CC682] rounded-full mb-2 shadow-lg"></div>
-          <div className="text-xs text-gray-600">#5CC682</div>
+      {/* User Personas */}
+      <Section title="User Personas">
+        <p className="mb-6">
+          Through initial conversations with the client, we identified three core user types for the site. We prioritized the first two since their needs were most pressing and most directly tied to the {"business's"} growth.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+          {[
+            {
+              num: "01",
+              name: "Owner-Operator",
+              desc:
+                "Drivers who own their own trucks and are looking for a reliable broker to partner with. They need clear information about pay, routes, and how to get started.",
+            },
+            {
+              num: "02",
+              name: "Carrier",
+              desc:
+                "Businesses or individuals who need freight moved. They want to know the company is trustworthy, insured, and responsive.",
+            },
+            {
+              num: "03",
+              name: "Casual Browser",
+              desc:
+                "Someone who lands on the site without a specific intent. The site should still communicate brand quality and leave a positive impression.",
+            },
+          ].map((p) => (
+            <div key={p.num} className="border border-gray-200 rounded-lg p-6">
+              <span className="text-xs font-semibold tracking-widest text-gray-400">{p.num}</span>
+              <h3 className="text-lg font-semibold text-gray-900 mt-2 mb-3">{p.name}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{p.desc}</p>
+            </div>
+          ))}
         </div>
-        <div className="text-center">
-          <div className="w-12 h-12 bg-[#3C40A6] rounded-full mb-2 shadow-lg"></div>
-          <div className="text-xs text-gray-600">#3C40A6</div>
-        </div>
-        <div className="text-center">
-          <div className="w-12 h-12 bg-[#A65D3C] rounded-full mb-2 shadow-lg"></div>
-          <div className="text-xs text-gray-600">#A65D3C</div>
-        </div>
-        <div className="text-center">
-          <div className="w-12 h-12 bg-[#3CA65F] rounded-full mb-2 shadow-lg"></div>
-          <div className="text-xs text-gray-600">#3CA65F</div>
-        </div>
-      </div>
-      <div className="text-center mt-4 text-sm text-gray-600">
-        &quot;Quick, friendly, and reliable&quot;
-      </div>
-    </div>
+      </Section>
 
-    {/* Timeline */}
-    <div className="bg-white p-6 relative z-10">
-      <h3 className="text-lg font-semibold mb-4">Project Timeline</h3>
-      <div className="relative">
-        <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-300"></div>
-        {[
-          { step: "Research", desc: "Competitive analysis" },
-          { step: "Design", desc: "Color & layout planning" },
-          { step: "Prototype", desc: "Figma mockups" },
-          { step: "Develop", desc: "Website implementation" }
-        ].map((item, i) => (
-          <div key={i} className="relative flex items-center mb-4">
-            <div className="w-8 h-8 bg-navActive rounded-full flex items-center justify-center text-black text-sm font-bold z-10">
-              {i + 1}
+      <Divider />
+
+      {/* Defining MVP */}
+      <Section title="Defining the MVP">
+        <p className="mb-4">
+          With a small budget and timeline, scoping the MVP was critical. I worked with the client
+          to identify the pages and features that would deliver the most value immediately.
+        </p>
+        <ul className="space-y-4 mt-6">
+          {[
+            {
+              label: "Homepage.",
+              desc:
+                "A strong first impression with a clear value proposition and calls-to-action for both owner-operators and carriers.",
+            },
+            {
+              label: "Services Pages.",
+              desc:
+                "Separate pages tailored to each user persona, answering their top questions and reducing friction to contact.",
+            },
+            {
+              label: "Contact Form.",
+              desc:
+                "A simple, accessible form that routes inquiries to the right person on the team.",
+            },
+            {
+              label: "Brand Identity.",
+              desc:
+                "A cohesive color palette, typography system, and road/trail motif applied consistently across all pages.",
+            },
+          ].map((item) => (
+            <li key={item.label} className="flex gap-4">
+              <span className="mt-1 w-2 h-2 rounded-full bg-gray-900 shrink-0" />
+              <p className="text-gray-700 text-base leading-relaxed">
+                <strong>{item.label}</strong> {item.desc}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      <Divider />
+
+      {/* Designs */}
+      <Section title="Designs">
+        <p className="mb-10">
+          I ran through several rounds of iteration, testing color combinations and layouts before
+          landing on the final direction. The goal was a site that felt professional and trustworthy
+          without being cold. Tone goals = friendly, energetic, and professional.
+        </p>
+
+        <div className="space-y-16">
+          {designImages.map((img) => (
+            <div key={img.id}>
+              {img.caption && (
+                <p className="text-sm font-semibold text-gray-900 mb-3">
+                  {img.caption}
+                </p>
+              )}
+              <div className="w-full bg-gray-100 rounded-lg overflow-hidden aspect-[16/9] flex items-center justify-center">
+                {img.src ? (
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    width={1200}
+                    height={675}
+                    className="w-full h-full object-contain"
+                  />
+                ) : (
+                  <span className="text-gray-400 text-sm tracking-widest uppercase">
+                    {img.caption || "Image"}
+                  </span>
+                )}
+              </div>
             </div>
-            <div className="ml-4">
-              <div className="font-medium">{item.step}</div>
-              <div className="text-sm text-gray-600">{item.desc}</div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  
-    {/* Quote/Testimonial */}
-    <div className="bg-white p-6 relative z-10">
-      <h3 className="text-lg font-semibold mb-4">Client Testimonial</h3>
-      <div className="text-center">
-        <div className="text-4xl text-blue-200 mb-2"></div>
-        <div className="italic text-gray-700 mb-4">
-          &quot;I am very happy with the design and overall layout.&quot;
+          ))}
         </div>
-        <div className="text-sm font-medium text-gray-600">— Meseret, Founder, ZB Trucking</div>
-      </div>
-    </div>
-    
-    <div className="bg-white p-6 relative z-10">
-      <p className="text-center tracking-normal text-balance text-lg/10 mt-auto">
-        Check out the Figma project <a href="https://www.figma.com/design/E7mkWWgoga3dN4P3jwuI8p/ZB-Trucking?node-id=1097-1328&t=8GKSEUIgUqdJNFy8-1" className="underline font-bold"> here</a>.
-      </p>
-    </div>
-  </div>
-  
-  {/* Right column - Image */}
-  <div className="col-span-1 lg:col-span-2 rounded-xl overflow-hidden shadow-lg">
-    {/* <Image src="/mockups/mockup_3.png" 
-      alt="About Us mockup" 
-      width={500} height={500} 
-      className="w-full h-full object-cover" /> */}
-    <img 
-      src="/mockups/mockup_3.png" 
-      alt="Career Mockup" 
-      className="w-full h-full object-cover" 
-    />
-  </div>
-</div>    
-</div>
+      </Section>
+
+      <Divider />
+
+      {/* Results & Takeaways */}
+      <Section title="Results & Takeaways">
+        <p className="mb-6">
+          For this project I wore the hat of brand strategist, researcher, and visual designer. 
+          A few key learnings shaped how {"I'll"} approach similar projects in the future.
+        </p>
+        <ul className="space-y-6">
+          {[
+            {
+              label: "Know your audience deeply.",
+              desc:
+                "Owner-operators and carriers have very different mental models. It was important to separate flows for usability.",
+            },
+            {
+              label: "Brand consistency compounds.",
+              desc:
+                "Repeating the road motif and color palette in small, unexpected places (section dividers, button hover states) strengthened.",
+            },
+            {
+              label: "Scope aggressively, launch fast.",
+              desc:
+                "For a small business, getting something live quickly is more valuable than a perfect design. We shipped the MVP and iterated based on real feedback.",
+            },
+          ].map((item) => (
+            <li key={item.label} className="flex gap-4">
+              <span className="mt-1 w-2 h-2 rounded-full bg-gray-900 shrink-0" />
+              <p className="text-gray-700 text-base leading-relaxed">
+                <strong>{item.label}</strong> {item.desc}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      {/* Footer spacer */}
+      <div className="h-24" />
     </main>
-  )
+  );
+}
+
+/* ─── Helpers ─────────────────────────────────────────────────────────────── */
+
+function Section({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <section className="max-w-5xl mx-auto px-6 md:px-12 py-14">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-950 mb-8">{title}</h2>
+      <div className="text-gray-700 text-base leading-relaxed max-w-3xl">{children}</div>
+    </section>
+  );
+}
+
+function Divider() {
+  return <hr className="border-t border-gray-200 max-w-5xl mx-auto px-6 md:px-12" />;
 }

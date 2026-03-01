@@ -21,11 +21,15 @@ export default function PresentationPage() {
   return (
     <main className="min-h-screen pb-8">
       <Navbar />
-      <div className="py-8 md:py-12">
-      <div className="flex flex-col">
-        <p className="mx-auto mt-2 max-w-lg px-4 text-center text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-balance text-gray-950">
+      <section className="max-w-5xl mx-auto px-6 md:px-12 pt-16 pb-10">
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-950 mb-6">
           Pathfinder
+        </h1>
+        <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
+          Check out this brand deck I created for Pathfinder Admissions Consulting.
         </p>
+      </section>
+
         <div className="w-full max-w-5xl mx-auto px-4 md:px-6 mt-6 md:mt-8">
           <Swiper 
             spaceBetween={20} 
@@ -59,7 +63,6 @@ export default function PresentationPage() {
             ))}
           </Swiper>
         </div>
-      </div>
       
       {/* Mobile-friendly custom styles */}
       <style jsx global>{`
@@ -104,7 +107,6 @@ export default function PresentationPage() {
           }
         }
       `}</style>
-      </div>
     </main>
   );
 }

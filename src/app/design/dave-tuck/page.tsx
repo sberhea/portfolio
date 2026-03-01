@@ -26,10 +26,16 @@ export default function DaveTuckPage() {
   return (
     <main>
       <Navbar />
-      <div className="py-8 md:py-12">
-      <p className="mx-auto mt-2 max-w-lg text-center text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">
-        A New Beginning Coaching & Retreats
-      </p>
+      
+      <section className="max-w-5xl mx-auto px-6 md:px-12 pt-16 pb-10">
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-950 mb-6">
+                  A New Beginning Coaching & Retreats
+        </h1>
+         <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
+          I served as an ops all-rounder for a wellness business. I made website updates, created flyeres, troubleshot technical issues, and edited social videos and posts. 
+        </p>
+      </section>
+      
       <div className="p-4 md:p-6 max-w-7xl mx-auto mt-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Large card - spans 2 rows on desktop */}
@@ -134,7 +140,6 @@ export default function DaveTuckPage() {
           </motion.div>
         )}
       </AnimatePresence>
-      </div>
     </main>
   )
 }
