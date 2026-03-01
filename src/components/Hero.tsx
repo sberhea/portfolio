@@ -8,7 +8,7 @@ const Hero = ({}) => {
       Selam is a <span className="hover:bg-lime-300 pr-0.5 text-blueText font-medium"> designer</span>, <span className="hover:bg-lime-300 pr-0.5 text-blueText font-semibold">engineer</span>, and <span className="hover:bg-lime-300 pr-0.5 text-blueText font-semibold">writer</span>. 
       </p>
       <p>  
-      She has four years of experience as a software engineer specializing in <span className="decoration-fuchsia-400 underline underline-offset-[8px] decoration-wavy">observability</span>.
+      She has four years of experience as a software engineer specializing in observability.
       </p>
       <p>
       Her portfolio spans UI design, marketing, video, and brand development for organizations in education, transportation, and wellness.

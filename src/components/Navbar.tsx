@@ -13,9 +13,15 @@ const Navbar = () => {
         <nav className="flex justify-evenly gap-x-12">
             <a 
                 href="/design" 
-                className="px-3 py-1 md:text-xl text-md font-medium bg-fuchsia-300 hover:bg-lime-300 transition-colors duration-200"
+                className="px-3 py-1 md:text-xl text-md font-medium bg-fuchsia-200 hover:bg-lime-300 transition-colors duration-200"
             >
                 <span className="text-blueText">Projects</span>
+            </a>
+            <a 
+                href="/design/community" 
+                className="px-3 py-1 md:text-xl text-md font-medium bg-fuchsia-200 hover:bg-lime-300 transition-colors duration-200"
+            >
+                <span className="text-blueText">Community</span>
             </a>
             {/* <a 
                 href="/design" 

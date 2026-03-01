@@ -25,7 +25,7 @@ export default function DesignPage() {
                   Consulting for small businesses
                 </p>
                 <p className="mt-2 max-w-lg text-md/6 text-gray-600 max-lg:text-center">
-                  Flyers, digital assets, and web pages for a small business.
+                  Flyers, digital assets, and web pages for a wellness business.
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
@@ -48,7 +48,7 @@ export default function DesignPage() {
                   Attention to detail
                 </p>
                 <p className="mt-2 max-w-lg text-md/6 text-gray-600 max-lg:text-center">
-                  Branding for a small education consulting business.
+                  Branding for a college admissions consultant.
                 </p>
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
@@ -71,14 +71,14 @@ export default function DesignPage() {
                   Clean designs
                 </p>
                 <p className="mt-2 max-w-lg text-md/6 text-gray-600 max-lg:text-center">
-                  Mockups of a slick ecommerce site for a family-owned transportation company.
+                  A case study of a slick website for a family-owned transportation company.
                 </p>
               </div>
              {/* Image container */}
           <div className="relative flex-1 overflow-hidden">
             <img
               alt="ZB Trucking landing screenshot"
-              src="/zb_logo.png"
+              src="/zb/zb_logo.png"
               className="h-full w-full object-scale-down"
             />
             {/* 👆 
