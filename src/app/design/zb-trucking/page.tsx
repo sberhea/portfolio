@@ -23,7 +23,7 @@ export default function ZBTruckingPage() {
       <Navbar />
 
       {/* Hero — full-width image placeholder */}
-      <div className="w-full bg-blue-300 h-[60vh] flex items-center justify-center overflow-hidden">
+      <div className="w-full bg-blue-300 h-[50vh] flex items-center justify-center overflow-hidden">
         {/* <Image src="/zb/home_page.png" fill alt="ZB Trucking Hero" className="object-cover" /> */}
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-950 mb-12">
           ZB Trucking
@@ -169,7 +169,7 @@ export default function ZBTruckingPage() {
         <p className="mb-10">
           I ran through several rounds of iteration, testing color combinations and layouts before
           landing on the final direction. The goal was a site that felt professional and trustworthy
-          without being cold — friendly and energetic without being unprofessional.
+          without being cold. Tone goals = friendly, energetic, and professional.
         </p>
 
         <div className="space-y-16">
@@ -187,7 +187,7 @@ export default function ZBTruckingPage() {
                     alt={img.alt}
                     width={1200}
                     height={675}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 ) : (
                   <span className="text-gray-400 text-sm tracking-widest uppercase">
@@ -205,26 +205,25 @@ export default function ZBTruckingPage() {
       {/* Results & Takeaways */}
       <Section title="Results & Takeaways">
         <p className="mb-6">
-          Delivering a site for a small business meant wearing many hats — brand strategist,
-          researcher, and visual designer. A few key learnings shaped how I'll approach similar
-          projects in the future.
+          For this project I wore the hat of brand strategist, researcher, and visual designer. 
+          A few key learnings shaped how I'll approach similar projects in the future.
         </p>
         <ul className="space-y-6">
           {[
             {
               label: "Know your audience deeply.",
               desc:
-                "Owner-operators and carriers have very different mental models. Designing separate flows for each dramatically improved clarity.",
+                "Owner-operators and carriers have very different mental models. It was important to separate flows for usability.",
             },
             {
               label: "Brand consistency compounds.",
               desc:
-                "Repeating the road motif and color palette in small, unexpected places (section dividers, button hover states) made the brand feel intentional and crafted.",
+                "Repeating the road motif and color palette in small, unexpected places (section dividers, button hover states) strengthened the brand story.",
             },
             {
               label: "Scope aggressively, launch fast.",
               desc:
-                "For a small business, getting something live quickly is more valuable than a perfect design. We shipped the MVP and iterated based on real feedback.",
+                "For a small business, getting something live quickly is more valuable than a perfect design.",
             },
           ].map((item) => (
             <li key={item.label} className="flex gap-4">
