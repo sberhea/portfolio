@@ -40,7 +40,7 @@ export default function CommunityPage() {
       {/* Page header */}
       <section className="max-w-5xl mx-auto px-6 md:px-12 pt-16 pb-10">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-950 mb-6">
-          Community Work
+          Community
         </h1>
         <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
           A snapshot of how I show up outside of work — organizing, connecting, and building
