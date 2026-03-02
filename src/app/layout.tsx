@@ -1,5 +1,6 @@
 import './globals.css';
 import { Inter, Playfair_Display, Lora } from 'next/font/google'
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ 
   subsets: ['latin'],
