@@ -56,6 +56,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${lora.variable} ${playfair.variable}`}>
       <body className="min-h-screen flex flex-col {lora.className}">
+        <Analytics />
         <div className="flex-1">
             {children}
         </div>
