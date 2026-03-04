@@ -55,6 +55,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${lora.variable} ${playfair.variable}`}>
+      <head>
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-JMZEJ1JDJ3"></script>
+          <script>
+            {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-JMZEJ1JDJ3');
+            `}
+          </script>
+      </head>
       <body className="min-h-screen flex flex-col {lora.className}">
         <Analytics />
         <div className="flex-1">
