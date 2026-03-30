@@ -221,7 +221,7 @@ export default function ZBTruckingPage() {
             {
               label: "Scope aggressively, launch fast.",
               desc:
-                "For a small business, getting something live quickly is more valuable than a perfect design. We shipped the MVP and iterated based on real feedback.",
+                "For a small business, getting something live quickly is more valuable than a perfect design.",
             },
           ].map((item) => (
             <li key={item.label} className="flex gap-4">
