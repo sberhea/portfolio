@@ -26,7 +26,7 @@ const stories = [
   {
     id: 4,
     title: "Writer's Group",
-    src: "/community/writers.JPG", // replace with your actual image path
+    src: "/community/writers2.JPG", // replace with your actual image path
     alt: "Selam at her favorite South Minneapolis coffee shop with writer's group attendees",
     body: "One of my passions is writing, I host a weekly writer's group in South Minneapolis.",
   },
@@ -34,17 +34,17 @@ const stories = [
 
 export default function CommunityPage() {
   return (
-    <main className="bg-white min-h-screen font-sans">
+    <main className="bg-white min-h-screen">
       <Navbar />
 
       {/* Page header */}
       <section className="max-w-5xl mx-auto px-6 md:px-12 pt-16 pb-10">
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-950 mb-6">
+        <h2 className="text-3xl md:text-5xl font-bold tracking-normal text-gray-950 mb-6">
           Community
-        </h1>
+        </h2>
         <p className="text-gray-600 text-lg leading-relaxed max-w-2xl">
           A snapshot of how I show up outside of work — organizing, connecting, and building
-          toward a more equitable tech ecosystem.
+          community.
         </p>
       </section>
 
@@ -67,7 +67,7 @@ export default function CommunityPage() {
                   alt={story.alt}
                   width={800}
                   height={600}
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-cover"
                 />
               ) : (
                 <span className="text-gray-400 text-sm tracking-widest uppercase">
@@ -78,9 +78,9 @@ export default function CommunityPage() {
 
             {/* Text */}
             <div className="w-full md:w-1/2">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-950 mb-4">
+              <h3 className="text-xl md:text-2xl font-bold text-gray-950 mb-4">
                 {story.title}
-              </h2>
+              </h3>
               <p className="text-gray-700 text-base leading-relaxed">{story.body}</p>
             </div>
           </div>
