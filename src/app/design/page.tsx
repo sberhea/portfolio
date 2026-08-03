@@ -9,7 +9,7 @@ export default function DesignPage() {
       <div className="py-8 md:py-12">
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <section className="max-w-5xl mx-auto px-6 md:px-12 pt-8">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-950 mb-6 text-center">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-normal text-gray-950 mb-6 text-center">
             A developer with a <span className="decoration-lime-300 underline">designer{"'"}s</span> eye 
           </h2>
         </section>
